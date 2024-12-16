@@ -43,9 +43,8 @@ def login_user(request):
 # ...
    
 def logout_user(request):
-    # Log out the current user
-    logout(request)
-    data = {"userName": ""}  # Empty userName to indicate logout
+        logout(request)  # Logs out the current user
+        data = {"userName": ""} # Empty userName to indicate logout
     return JsonResponse(data)
 
 # Create a `registration` view to handle sign up request
