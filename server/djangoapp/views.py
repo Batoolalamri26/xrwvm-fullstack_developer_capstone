@@ -45,7 +45,7 @@ def login_user(request):
 def logout_request(request):
         logout(request)  # Logs out the current user
         data = {"userName": ""} # Empty userName to indicate logout
-    return JsonResponse(data)
+        return JsonResponse(data)
 
 # Create a `registration` view to handle sign up request
 # @csrf_exempt
